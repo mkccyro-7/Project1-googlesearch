@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <style>
+            #blanks{
+                padding: 0px;
+                margin: 0px;
+                font-family: Arial, sans-serif;
+            }
+            #bis{
+                height: 36px;
+                background-color:#ededed;
+                margin-right: 12px;
+                margin-top: 0px;
+            }
+            .naks{
+                background-color: #f1f1f1;
+                width: 100%;
+                margin-top: 0px;
+                margin-left: 0px;
+                margin-right: 0px;
+                height: 60px;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+
+            }
+            .ob{
+                margin-top: 10px;
+                margin-left: 0px;
+                margin-right: 0px;
+                text-align: right;
+                font-family: Arial, sans-serif;
+                
+            }
+            .as{
+                font-family: Arial, sans-serif;
+                margin-top: 80px;
+                margin-right: 35px;
+                margin-bottom: 25px;
+                margin-left: 35px;
+                padding-top: 0px;
+                color: #d93025;
+                font-size: 20px;
+            }
+            .line{
+                border-bottom: 1px solid #ebebeb;
+            }
+            .lll{
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                top: 2px;
+            }
+            .sss{
+                background-image: url('//ssl.gstatic.com/gb/images/i2_2ec824b0.png');
+            }
+            .bbox{
+                max-width: 1140px;
+                min-width: 200px;
+                width: 96%;
+                margin-top: 40px;
+                margin-left: 45px;
+                margin-bottom: 0px;
+                margin-right: 2%;
+            }
+            .makl{
+                color: #333;
+                height: 42px;
+                font-size: 16px;
+                width: 16%;
+                float: left;
+                min-width: 167px;
+            }
+            .jop{
+                height: 30px;
+                vertical-align: middle;
+                display: table-cell;
+            }
+            .mith{
+                float: left;
+                width: 50%;
+                min-width: 167px;
+                min-height: 30px;
+
+            }
+            .oan{
+                float: left;
+                width: 16%;
+                height: 42px;
+                color: #222;
+                font-size: 13px;
+                line-height: 16px;
+                min-width: 167px;
+            }
+            .adb{
+                clear: both;
+                width: 100%;
+            }
+            .rev{
+                height: 30px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .fik{
+                float: left;
+                width: 50%;
+                min-width: 167px;
+                min-height: 41px;
+
+            }
+            .apl{
+                padding-right: 16px;
+            }
+            .kii{
+                border-radius: 1px;
+                border-color: 1px solid #d9d9d9;
+                height: 25px;
+                padding: 1px 8px;
+                font-size: 13px;
+                border-top: 1px solid #c0c0c0;
+                width: 100%;
+                text-align: left;
+            }
+            .per{
+                clear: both;
+            }
+            .asb{
+                font-weight: bold;
+                font-size: 11px;
+                border-radius: 2px;
+                text-align: center;
+                color: #fff;
+                border: 1px solid #3079ed;
+                box-shadow: none;
+                background-color: #4d90fe;
+                margin: 10px 0px;
+                padding: 0px 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="naks" >
+        
+            <div class="ob">  <button id="bis" onclick="" >Google Search</button></div>
+            <a class="lll" aria-label="Google" href="/webhp?tab=ww" title="Go to Google Home">
+                <span class="sss" aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="as">
+            <label style="margin-left: 10px">Advanced Search</label>
+        </div>
+        <div class="line"></div>
+        <div class="bbox">
+            <form id="blanks" action="/search" method="GET" name="f">
+                <div class="makl">
+                    <div class="jop">
+                        <span>Find pages with... </span>
+                    </div>
+                    
+                </div>
+                <div class="mith"> </div>
+                <div class="adb">
+                    <div class="per">
+                        <div class="oan">
+                            <div class="rev">
+                                <label for="frt">all these words:</label>
+                            </div>
+                        </div>
+                        <div class="fik">
+                            <div class="apl">
+                                <input id="frt" class="kii" autofocus="autofocus" type="text" value="" name="as_q" >
+                            </div>
+                        </div>  
+                    </div> 
+                    <div class="per"> 
+                        <div class="oan">
+                            <div class="rev">
+                                <label for="ggg">this exact word or phase:</label>
+                            </div>
+                        </div>
+                        <div class="fik">
+                            <div class="apl">
+                                <input id="ggg" class="kii" type="text" name="as_epq">
+                            </div>
+                        </div>        
+                    </div>
+                    <div class="per">
+                        <div class="oan">
+                            <div class="rev">
+                                <label for="hhh">any of these words:</label>
+                            </div>
+                        </div>   
+                        <div class="fik">
+                            <div class="apl">
+                                <input id="hhh" class="kii" type="text" name="as_oq">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="per">
+                        <div class="oan">
+                            <div class="rev">
+                                <label for="jjj">none of these words:</label>
+                            </div>
+                        </div> 
+                        <div class="fik">
+                            <div class="apl">   
+                                <input id="jjj" class="kii" type="text" name="as_eq">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="per">
+                        <div class="oan">
+                            <div class="rev">
+                                <label for="kkk">numbers ranging from:</label>
+                            </div>
+                        </div>
+                        <div class="fik" style="position: relative;">
+                            <div class="otk">
+                                <div style="display: table; width: 100%;">
+                                    <div style="display: table-cell; padding-right: 16px;">
+                                        <input id="kkk" class="kii" type="text" name="as_nlo">
+                                    </div>
+                                    <div style="display: table-cell; width: 40px; padding-right: 6px; padding-left: 6px; text-align: center;font-size: 13px; color: #222;" >to</div> 
+                                    <div style="display: table-cell;">
+                                        <input class="kii" type="text" name="as_nhi">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="per">
+                        <div class="oan">
+                            <div class="rev"> </div>
+                        </div>
+                        <div class="fik">
+                            <div class="apl" style="text-align: right;" >
+                                <input class="asb" style="user-select: none; line-height: 100%; height: 30px; min-width: 120px;" type="submit" value="Advanced Search">
+                            </div>  
+                        </div>
+                    </div>        
+                </div>
+            </form> 
+        </div>
+        
+    </body>
+</html>

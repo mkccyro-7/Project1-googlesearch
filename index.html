@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            .gs{
+                text-align: center;
+                margin-top: 70px;
+                
+            }
+            #ga{
+                text-align: right;
+                margin-top: 5px;
+                
+            }
+            #bar{
+                border-radius: 25px;
+                padding: 14px;
+                width: 550px;
+                background-color: transparent;
+                border: 1px solid #dfe1e5 ;
+                color: #5F6368;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+            }
+            
+            
+            .srh{
+                border-radius: 5px;
+                padding: 20px;
+                
+                
+            }
+            #br{
+                border-radius: 5px;
+                width: 150px;
+                padding-left: 16px;
+                padding-right: 16px;
+                height: 36px;
+                margin-left: 40px;
+                font-size: 14px;
+                border: 1px solid #f2f2f2;
+                font-family: Arial, sans-serif;
+                color: #5F6368;
+                cursor: pointer;
+                margin-top: 30px;
+            }
+            #luk{
+                border-radius: 5px;
+                width: 150px;
+                margin-left: 10px;
+                padding-left: 16px;
+                padding-right: 16px;
+                font-size: 14px;
+                border: 1px solid #f2f2f2;
+                font-family: Arial, sans-serif;
+                color: #5F6368;
+                cursor: pointer;
+                height: 36px;
+            }
+            h1{
+                font-family: arial, sans-serif;
+                font-size: 40px;
+                color: rgb(red, green, blue);
+                padding-top: 109px;
+            }
+            #logo{
+                padding: 20px;
+                margin: 10px;
+                height: 100px;
+                width: 272px;
+            }
+            #bis{
+                height: 36px;
+                background-color:#ededed;
+                margin-right: 12px;
+            }
+            #bas{
+                height: 36px;
+                background-color: #ededed;
+                
+            }
+            
+                
+                
+            
+        </style>
+    </head>
+    <body>
+        <div id="ga">
+            <button id="bis" onclick="">Image Search </button>
+            <button id="bas" onclick="">Advanced Search</button>
+           
+        </div>
+        <div class="gs">
+            <!--<h1> Google </h1>-->
+
+            <img id="logo" src="https://www.google.co.in/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="Google">
+            <form action="https://google.com/search">
+                
+                <input type="text" name="q" placeholder="search" id="bar">
+                
+                <br/>
+                <div class="srh">
+                <input type="submit"  value="Google Search" id="br">
+                <input type="submit" value="I'm Feeling Lucky" formaction="https://www.google.com/search?btnI=1&q=%s" id="luk">
+                </div>
+            </form>
+        </div>
+        
+    </body>
+</html>
